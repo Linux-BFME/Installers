@@ -1,0 +1,45 @@
+name: LotrBfmeII
+game_slug: LotrBfmeII_GameSlug
+version: Installer
+slug: installeridentifier
+runner: wine
+
+script:
+    files:
+    - bfme2100: https://github.com/Linux-BFME/Dump_BFME-II-1.00/archive/master.zip
+    game:
+        arch: win64
+        exe: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Battle for Middle-earth (tm) II/lotrbfme2.exe
+        working_dir: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Battle for Middle-earth (tm) II
+        prefix: $GAMEDIR
+    installer:
+    - task:
+        arch: win64
+        name: create_prefix
+        prefix: $GAMEDIR
+    - extract:
+        description: Installing the game
+        file: bfme2100
+        format: zip
+        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Battle for Middle-earth (tm) II
+    - write_file:
+        file: $GAMEDIR/drive_c/users/$USER/Application Data/My Battle for Middle-earth Files/Options.ini
+        content: |
+            AllHealthBars = yes
+            AmbientVolume = 60.000000
+            AudioLOD = Low
+            Brightness = 50
+            FlashTutorial = 0
+            GameSpyIPAddress = 10.147.19.145
+            HasSeenLogoMovies = yes
+            IdealStaticGameLOD = Low
+            MovieVolume = 49.000000
+            MusicVolume = 57.000000
+            Resolution = $RESOLUTION_WIDTH $RESOLUTION_HEIGHT
+            SFXVolume = 59.000000
+            ScrollFactor = 64
+            SendDelay = no
+            StaticGameLOD = Medium
+            TimesInGame = 63
+            UseEAX3 = no
+            VoiceVolume = 48.000000
