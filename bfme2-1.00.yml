@@ -1,6 +1,6 @@
-name: LotrBfmeII
-game_slug: LotrBfmeII_GameSlug
-version: Installer
+name: The Lord of the Rings - The Battle for Middle-Earth II
+game_slug: BFME2-100
+version: Patch 1.00
 slug: installeridentifier
 runner: wine
 

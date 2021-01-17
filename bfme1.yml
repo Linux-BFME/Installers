@@ -1,6 +1,6 @@
-name: LotrBfmeI
-game_slug: LotrBfmeI_GameSlug
-version: Installer
+name: Lord of the Rngs - Battle for Middle Earth 1
+game_slug: BFME1
+version: Patch 1.06
 slug: installeridentifier
 runner: wine
 
@@ -10,7 +10,7 @@ script:
     game:
         arch: win64
         exe: $GAMEDIR/drive_c/Program Files (x86)/EA Games/The Battle for Middle-earth (tm)/lotrbfme.exe
-        working_dir: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Battle for Middle-earth (tm) II
+        working_dir: $GAMEDIR/drive_c/Program Files (x86)/EA Games/The Battle for Middle-earth (tm)
         prefix: $GAMEDIR
     installer:
     - task:

@@ -1,0 +1,52 @@
+name: The Lord of the Rings - The Rise of the Witch-king
+game_slug: RotWK
+version: Patch 2.02 v8.4
+slug: installeridentifier
+runner: wine
+
+script:
+    files:
+    - bfme2106: https://github.com/Linux-BFME/Dump_BFME-II-1.06/archive/master.zip
+    - rotwk: https://github.com/Linux-BFME/Dump_RotWK-Latest/archive/master.zip
+    game:
+        arch: win64
+        exe: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Lord of the Rings, The Rise of the Witch-king
+        working_dir: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Lord of the Rings, The Rise of the Witch-king
+        prefix: $GAMEDIR
+    installer:
+    - task:
+        arch: win64
+        name: create_prefix
+        prefix: $GAMEDIR
+    - extract:
+        description: Installing BFME II (Required for RotWK)
+        file: bfme2106
+        format: zip
+        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Battle for Middle-earth (tm) II
+    - extract:
+        description: Installing RotWK
+        file: rotwk
+        format: zip
+        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Lord of the Rings, The Rise of the Witch-king
+    - write_file:
+        file: $GAMEDIR/drive_c/users/$USER/Application Data/My The Lord of the Rings, The Rise of the Witch-king Files/Options.ini
+        content: |
+           AllHealthBars = yes
+           AmbientVolume = 20.000000
+           AudioLOD = High
+           Brightness = 50
+           FlashTutorial = 0
+           GameSpyIPAddress = 10.147.19.145
+           HasSeenLogoMovies = yes
+           IdealStaticGameLOD = VeryLow
+           MovieVolume = 20.000000
+           MusicVolume = 20.000000
+           Resolution = $RESOLUTION_WIDTH $RESOLUTION_HEIGHT
+           SFXVolume = 20.000000
+           ScrollFactor = 100
+           SendDelay = no
+           StaticGameLOD = Very Low
+           SuppressCahPromo = true
+           TimesInGame = 520
+           UseEAX3 = no
+           VoiceVolume = 20.000000
