@@ -37,5 +37,5 @@ Note: Despite 1.00, this installer uses the new game.dat. This prevents the need
 (Coming Soon)
 
 ## Age of the Ring (Latest Update)
-![](https://i.imgur.com/lairyxM.png)
+![](https://i.imgur.com/YnpuiI1.png)
 (Coming Soon)
