@@ -51,3 +51,5 @@ script:
             TimesInGame = 63
             UseEAX3 = no
             VoiceVolume = 48.000000
+    winestream:
+        dxvk: false
