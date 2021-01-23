@@ -20,7 +20,7 @@ Run the following command:
 
 *****
 
-## Battle for Middle-Earth - Blue Wizard Mod (Latest Update)
+## Battle for Middle-Earth I - Blue Wizard Mod (Latest Update)
 ![](https://i.imgur.com/HJcPbfo.png)
 (Coming Soon)
 
@@ -31,9 +31,6 @@ Run the following command:
 Run the following command:
 
 `tmp=$(mktemp) && curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/bfme2-1.00.yml -o $tmp && lutris -i $tmp`
-
-
-Note: Despite 1.00, this installer uses the new game.dat. If you want to play LAN/online, the other user needs to install the [BFME II Patch Switcher](https://www.gamereplays.org/battleformiddleearth2/portals.php?show=page&name=bfme2-patch-1.09-version-2.0-live), set to 1.09, then swap back.
 
 *****
 
