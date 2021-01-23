@@ -27,7 +27,7 @@ Run the following command:
 `tmp=$(mktemp) && curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/bfme2-1.00.yml -o $tmp && lutris -i $tmp`
 
 
-Note: Despite 1.00, this installer uses the new game.dat. If you want to play LAN/online, the other user needs it too. See [this guide](https://forums.revora.net/topic/105190-bfme1bfme2rotwk-games-download-installation-guide/) for details.
+Note: Despite 1.00, this installer uses the new game.dat. If you want to play LAN/online, the other user needs to install the [BFME II Patch Switcher](https://www.gamereplays.org/battleformiddleearth2/portals.php?show=page&name=bfme2-patch-1.09-version-2.0-live), set to 1.09, then swap back.
 
 *****
 
@@ -44,6 +44,6 @@ Note: Despite 1.00, this installer uses the new game.dat. If you want to play LA
 *****
 
 ## Age of the Ring (Latest Update)
-![](https://i.imgur.com/YqDRWKd.png)
+![](https://i.imgur.com/l7gnDJb.png)
 *Age of the Ring was voted the highest quality mod out of any game in 2020. It is effectively BFME III.*
 (Coming Soon)

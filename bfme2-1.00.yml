@@ -1,12 +1,12 @@
 name: The Lord of the Rings - The Battle for Middle-Earth II
 game_slug: BFME2-100
 version: Patch 1.00
-slug: installeridentifier
+slug: bfme2100slug
 runner: wine
 
 script:
     files:
-    - bfme2100: https://github.com/Linux-BFME/Dump_BFME-II-1.00/archive/master.zip
+    - bfme2100: https://gitlab.com/dginovker/Dump_BFME-II-1-00/-/archive/master/Dump_BFME-II-1-00-master.zip
     game:
         arch: win64
         exe: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Battle for Middle-earth (tm) II/lotrbfme2.exe
@@ -21,9 +21,9 @@ script:
         description: Installing the game
         file: bfme2100
         format: zip
-        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Battle for Middle-earth (tm) II
+        dst: $GAMEDIR/
     - write_file:
-        file: $GAMEDIR/drive_c/users/$USER/Application Data/My Battle for Middle-earth (tm) II Files/Options.ini
+        file: $GAMEDIR/drive_c/users/$USER/Application Data/My Battle for Middle-earth(tm) II Files/Options.ini
         content: |
             AllHealthBars = yes
             AmbientVolume = 60.000000

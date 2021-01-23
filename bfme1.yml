@@ -1,7 +1,7 @@
 name: Lord of the Rings - Battle for Middle Earth 1
 game_slug: BFME1
 version: Patch 1.06
-slug: installeridentifier
+slug: bfme106slug
 runner: wine
 
 script:
