@@ -12,17 +12,17 @@ Installation instructions:
 
 *****
 
-## Battle for Middle-Earth - Blue Wizard Mod (Latest Update)
-![](https://i.imgur.com/HJcPbfo.png)
-(Coming Soon)
-
-*****
-
 ## Battle for Middle-Earth I (Latest Update)
 ![](https://i.imgur.com/ywMoJE2.jpg)
 Run the following command:
 
 `tmp=$(mktemp) && curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/bfme1.yml -o $tmp && lutris -i $tmp`
+
+*****
+
+## Battle for Middle-Earth - Blue Wizard Mod (Latest Update)
+![](https://i.imgur.com/HJcPbfo.png)
+(Coming Soon)
 
 *****
 
