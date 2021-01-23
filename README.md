@@ -5,15 +5,24 @@ Requirements:
 * Linux
 * [Lutris](https://lutris.net/downloads/)
 
+Installation instructions:
+* Find the game you want to install
+* Open a terminal and paste the install command
+* Follow the Lutris prompts!
+
+*****
+
 ## Battle for Middle-Earth I (Latest Update)
 ![](https://i.imgur.com/ywMoJE2.jpg)
 Run the following command:
+
 `tmp=$(mktemp) && curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/bfme1.yml -o $tmp && lutris -i $tmp`
 
 
 ## Battle for Middle-Earth II (Original 1.00 Patch)
 ![](https://i.imgur.com/G0NEN9r.jpg)
 Run the following command:
+
 `tmp=$(mktemp) && curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/bfme2-1.00.yml -o $tmp && lutris -i $tmp`
 
 
@@ -28,5 +37,5 @@ Note: Despite 1.00, this installer uses the new game.dat. This prevents the need
 (Coming Soon)
 
 ## Age of the Ring (Latest Update)
-![](https://i.imgur.com/v5GnW0k.png)
+![](https://i.imgur.com/lairyxM.png)
 (Coming Soon)
