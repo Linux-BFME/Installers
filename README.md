@@ -3,17 +3,30 @@
 Requirements:
 
 * Linux
-* Lutris
+* [Lutris](https://lutris.net/downloads/)
 
-## BFME I
-1. Download the bfme1.yml
-2. Open a terminal at the location of your `bfme2.yml`
-3. Run `lutris -i bfme1.yml`
+## Battle for Middle-Earth I (Latest Update)
+![](https://i.imgur.com/ywMoJE2.jpg)
+Run the following command:
+`tmp=$(mktemp) && curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/bfme1.yml -o $tmp && lutris -i $tmp`
 
 
-## BFME II
-1. Download the bfme1.yml
-2. Open a terminal at the location of your `bfme2.yml`
-3. Run `lutris -i bfme2.yml`
+## Battle for Middle-Earth II (Original 1.00 Patch)
+![](https://i.imgur.com/G0NEN9r.jpg)
+Run the following command:
+`tmp=$(mktemp) && curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/bfme2-1.00.yml -o $tmp && lutris -i $tmp`
 
-Note: BFME II uses the new game.dat. This prevents the need of a CD to play the game, but requires anyone else playing online has it too. See the BFME II section of [this guide](https://forums.revora.net/topic/105190-bfme1bfme2rotwk-games-download-installation-guide/) for details.
+
+Note: Despite 1.00, this installer uses the new game.dat. This prevents the need of a CD to play the game, but requires the other LAN/online user to have it too. See the BFME II section of [this guide](https://forums.revora.net/topic/105190-bfme1bfme2rotwk-games-download-installation-guide/) for details.
+
+## Battle for Middle-Earth II (Latest Update)
+![](https://i.imgur.com/G0NEN9r.jpg)
+(Coming Soon)
+
+## Rise of the Witch King (Latest Update)
+![](https://i.imgur.com/4xpC3mN.jpg)
+(Coming Soon)
+
+## Age of the Ring (Latest Update)
+![](https://i.imgur.com/v5GnW0k.png)
+(Coming Soon)
