@@ -1,4 +1,4 @@
-name: Lord of the Rngs - Battle for Middle Earth 1
+name: Lord of the Rings - Battle for Middle Earth 1
 game_slug: BFME1
 version: Patch 1.06
 slug: installeridentifier
@@ -9,7 +9,7 @@ script:
     - bfme: https://gitlab.com/dginovker/Dump_BFME-I/-/archive/master/Dump_BFME-I-master.zip
     game:
         arch: win64
-        exe: $GAMEDIR/drive_c/Program Files (x86)/EA Games/The Battle for Middle-earth (tm)/lotrbfme.exe
+        exe: $GAMEDIR/drive_c/Program Files (x86)/EA GAMES/The Battle for Middle-earth (tm)/lotrbfme.exe
         working_dir: $GAMEDIR/drive_c/Program Files (x86)/EA Games/The Battle for Middle-earth (tm)
         prefix: $GAMEDIR
     installer:
@@ -21,7 +21,7 @@ script:
         description: Installing the game
         file: bfme
         format: zip
-        dst: $GAMEDIR/drive_c/Program Files (x86)/EA Games/The Battle for Middle-earth (tm)
+        dst: $GAMEDIR/
     - write_file:
         file: $GAMEDIR/drive_c/users/$USER/Application Data/My Battle for Middle-earth Files/Options.ini
         content: |
