@@ -22,6 +22,14 @@ script:
         file: bfme2100
         format: zip
         dst: $GAMEDIR/
+    - task:
+        arch: win64
+        description: Patch multiplayer
+        key: 
+        name: set_regedit
+        path: HKEY_LOCAL_MACHINE\Software\Wow6432Node\Electronic Arts\Electronic Arts\The Battle for Middle-earth II\ergc
+        prefix: $GAMEDIR
+        value: '$GAMEDIR$CACHE'
     - write_file:
         file: $GAMEDIR/drive_c/users/$USER/Application Data/My Battle for Middle-earth(tm) II Files/Options.ini
         content: |
