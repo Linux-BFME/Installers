@@ -12,6 +12,12 @@ Installation instructions:
 
 *****
 
+## Battle for Middle-Earth - Blue Wizard Mod (Latest Update)
+![](https://i.imgur.com/HJcPbfo.png)
+(Coming Soon)
+
+*****
+
 ## Battle for Middle-Earth I (Latest Update)
 ![](https://i.imgur.com/ywMoJE2.jpg)
 Run the following command:
