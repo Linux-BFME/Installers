@@ -1,12 +1,12 @@
 name: The Lord of the Rings - The Battle for Middle-Earth II
-game_slug: BFME2-100
-version: Patch 1.00
-slug: bfme2100slug
+game_slug: BFME2
+version: All patches
+slug: bfme2slug
 runner: wine
 
 script:
     files:
-    - bfme2100: https://gitlab.com/dginovker/Dump_BFME-II/-/archive/master/Dump_BFME-II-1-00-master.zip
+    - bfme2: https://gitlab.com/dginovker/dump_bfme-ii/-/archive/master/dump_bfme-ii-master.zip
     game:
         arch: win64
         exe: $GAMEDIR/drive_c/windows/explorer.exe
@@ -20,7 +20,7 @@ script:
         prefix: $GAMEDIR
     - extract:
         description: Installing the game
-        file: bfme2100
+        file: bfme2
         format: zip
         dst: $GAMEDIR/
     - task:
