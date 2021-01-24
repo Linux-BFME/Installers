@@ -26,17 +26,11 @@ Run the following command:
 
 *****
 
-## Battle for Middle-Earth II (Original 1.00 Patch)
+## Battle for Middle-Earth II
 ![](https://i.imgur.com/G0NEN9r.jpg)
 Run the following command:
 
-`tmp=$(mktemp) && curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/bfme2-1.00.yml -o $tmp && lutris -i $tmp`
-
-*****
-
-## Battle for Middle-Earth II (Latest Update)
-![](https://i.imgur.com/G0NEN9r.jpg)
-(Coming Soon)
+`tmp=$(mktemp) && curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/bfme2.yml -o $tmp && lutris -i $tmp`
 
 *****
 

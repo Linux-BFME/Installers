@@ -6,11 +6,12 @@ runner: wine
 
 script:
     files:
-    - bfme2100: https://gitlab.com/dginovker/Dump_BFME-II-1-00/-/archive/master/Dump_BFME-II-1-00-master.zip
+    - bfme2100: https://gitlab.com/dginovker/Dump_BFME-II/-/archive/master/Dump_BFME-II-1-00-master.zip
     game:
         arch: win64
-        exe: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Battle for Middle-earth (tm) II/lotrbfme2.exe
-        working_dir: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Battle for Middle-earth (tm) II
+        exe: $GAMEDIR/drive_c/windows/explorer.exe
+        args: /desktop=bfme2
+        working_dir: $GAMEDIR/
         prefix: $GAMEDIR
     installer:
     - task:
