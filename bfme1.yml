@@ -13,6 +13,17 @@ script:
         working_dir: $GAMEDIR/drive_c/Program Files (x86)/EA Games/The Battle for Middle-earth (tm)
         prefix: $GAMEDIR
     installer:
+    - input_menu:
+        description: 'Choose which CD Key ID to use (for multiplayer, every user needs a different one, otherwise you will see "Serial in use" error)'
+        id: CD_KEY
+        options:
+        - AA: AA
+        - AB: AB
+        - AC: AC
+        - AD: AD
+        - AE: AE
+        - AF: AF
+        preselect: AF
     - task:
         arch: win64
         name: create_prefix
@@ -29,7 +40,7 @@ script:
         name: set_regedit
         path: HKEY_LOCAL_MACHINE\Software\Wow6432Node\Electronic Arts\EA Games\The Battle for Middle-earth\ergc
         prefix: $GAMEDIR
-        value: '$GAMEDIR$CACHE'
+        value: 'GP3T..$INPUT_CD_KEY'
     - write_file:
         file: $GAMEDIR/drive_c/users/$USER/Application Data/My Battle for Middle-earth Files/Options.ini
         content: |
