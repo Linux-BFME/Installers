@@ -8,11 +8,11 @@
 
 if [[ $# -eq 0 ]] ; then
     echo 'First argument should be Lutris $GAMEDIR (Location containing drive_c, dosdevices, *.reg, etc..)'
-    echo 'Exitng...'
+    echo 'Exiting...'
     exit 0
 fi
 
-declare -r OPTIONS_COUNT=1
+declare -r OPTIONS_COUNT=2
 declare -r GAME_PATH="$1/drive_c/Program Files (x86)/EA GAMES/The Battle for Middle-earth (tm)/"
 
 declare -r SELECTION=$(($RANDOM % OPTIONS_COUNT))
