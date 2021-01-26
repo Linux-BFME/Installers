@@ -54,3 +54,4 @@ script:
             VoiceVolume = 48.000000
     wine:
         dxvk: false
+        version: system
