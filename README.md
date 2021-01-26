@@ -1,7 +1,6 @@
 # Lutris Install Scripts
 
-Todo before these installers are functional:
-- Add input_menu's to prompt for key so people can play online and fix 3 minute autodefeat
+Note: These installers are in development. Feel free to report bugs but don't attempt to use for actual playing.
 
 Requirements:
 
