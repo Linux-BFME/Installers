@@ -11,7 +11,7 @@ script:
     game:
         arch: win64
         exe: $GAMEDIR/drive_c/Program Files (x86)/EA GAMES/The Battle for Middle-earth (tm)/lotrbfme.exe
-        working_dir: $GAMEDIR/drive_c/Program Files (x86)/EA Games/The Battle for Middle-earth (tm)
+        working_dir: $GAMEDIR/drive_c/Program Files (x86)/EA GAMES/The Battle for Middle-earth (tm)
         prefix: $GAMEDIR
     installer:
     - task:
