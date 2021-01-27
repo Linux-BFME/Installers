@@ -6,7 +6,7 @@ if [[ $# -eq 0 ]] ; then
     exit 0
 fi
 
-declare -r OPTIONS_COUNT=2
+declare -r OPTIONS_COUNT=22
 declare -r GAME_PATH="$1/drive_c/Program Files (x86)/EA GAMES/The Battle for Middle-earth (tm)/"
 
 declare -r SELECTION=$(($RANDOM % OPTIONS_COUNT))
