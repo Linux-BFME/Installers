@@ -28,7 +28,7 @@ script:
         dst: $GAMEDIR/
     - extract:
         description: Extracting main game
-        file: bfme2
+        file: bfme2bfme
         format: 7z
         dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Battle for Middle-earth (tm) II/
     - extract:
