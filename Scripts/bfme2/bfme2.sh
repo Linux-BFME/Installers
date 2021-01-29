@@ -11,5 +11,5 @@ declare -r GAME_PATH="$1/drive_c/Program Files (x86)/Electronic Arts/The Battle 
 
 declare -r SELECTION=$(($RANDOM % OPTIONS_COUNT))
 
-curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/Scripts/bfme2/options/${SELECTION}/LOTRBFMe.dat -o "$GAME_PATH/game2.dat"
+curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/Scripts/bfme2/options/${SELECTION}/game2.dat -o "$GAME_PATH/game2.dat"
 curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/Scripts/bfme2/options/${SELECTION}/system.reg -o "$1/system.reg"
