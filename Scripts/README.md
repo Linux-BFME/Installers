@@ -6,7 +6,7 @@ The solution (outlined https://www.gamereplays.org/community/index.php?showtopic
 
 *****
 
-Given that the script grabs a random copy, the chances of 2+ players having a conflict is listed below. [(Math)](https://www.desmos.com/calculator/j1eo34cgon)
+Given that the script grabs a random copy, the chances of 2+ players having a conflict is listed below. [(Math)](https://www.desmos.com/calculator/xlzxvmc73i)
 
 |             Game | Copies | 2 player game | 8 player game |
 | ---------------- | ------ | ------------- | ------------- |
