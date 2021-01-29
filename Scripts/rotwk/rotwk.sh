@@ -6,7 +6,7 @@ if [[ $# -eq 0 ]] ; then
     exit 0
 fi
 
-declare -r OPTIONS_COUNT=1
+declare -r OPTIONS_COUNT=7
 
 declare -r GAME_PATH="$1/drive_c/Program Files (x86)/Electronic Arts/The Lord of the Rings, The Rise of the Witch-king"
 
