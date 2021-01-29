@@ -12,7 +12,7 @@ script:
     - installscript: https://raw.githubusercontent.com/Linux-BFME/Installers/master/Scripts/rotwk/rotwk.sh
     game:
         arch: win64
-        exe: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Lord of the Rings, The Rise of the Witch-king
+        exe: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Lord of the Rings, The Rise of the Witch-king/lotrbfme2ep1.exe
         working_dir: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Lord of the Rings, The Rise of the Witch-king
         prefix: $GAMEDIR
     installer:
