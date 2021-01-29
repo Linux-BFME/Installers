@@ -1,16 +1,16 @@
-name: The Lord of the Rings - The Rise of the Witch-king
+name: The Lord of the Rings - The Rise of the Witch-King
 game_slug: RotWK
 version: Patch 2.02 v8.4
-slug: installeridentifier
+slug: rotwkslug
 runner: wine
 
 script:
     files:
-    - general: 
-    - bfme2106: 
-    - rotwk: 
+    - general: https://gitlab.com/dginovker/Dump_RotWK-Latest/-/raw/master/general.7z
+    - bfme2106: https://gitlab.com/dginovker/Dump_RotWK-Latest/-/raw/master/The%20Battle%20For%20Middle-earth%20(tm)%20II%201.06%20Folder.7z
+    - rotwk: https://gitlab.com/dginovker/Dump_RotWK-Latest/-/raw/master/RotWK%20v8.02%20v8%20Folder.7z
     - installscript: https://raw.githubusercontent.com/Linux-BFME/Installers/master/Scripts/rotwk/rotwk.sh
-   game:
+    game:
         arch: win64
         exe: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Lord of the Rings, The Rise of the Witch-king
         working_dir: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Lord of the Rings, The Rise of the Witch-king
@@ -41,22 +41,25 @@ script:
     - write_file:
         file: $GAMEDIR/drive_c/users/$USER/Application Data/My The Lord of the Rings, The Rise of the Witch-king Files/Options.ini
         content: |
-           AllHealthBars = yes
-           AmbientVolume = 20.000000
-           AudioLOD = High
-           Brightness = 50
-           FlashTutorial = 0
-           GameSpyIPAddress = 10.147.19.145
-           HasSeenLogoMovies = yes
-           IdealStaticGameLOD = VeryLow
-           MovieVolume = 20.000000
-           MusicVolume = 20.000000
-           Resolution = $RESOLUTION_WIDTH $RESOLUTION_HEIGHT
-           SFXVolume = 20.000000
-           ScrollFactor = 100
-           SendDelay = no
-           StaticGameLOD = Very Low
-           SuppressCahPromo = true
-           TimesInGame = 520
-           UseEAX3 = no
-           VoiceVolume = 20.000000
+            AllHealthBars = yes
+            AmbientVolume = 20.000000
+            AudioLOD = High
+            Brightness = 50
+            FlashTutorial = 0
+            GameSpyIPAddress = 10.147.19.145
+            HasSeenLogoMovies = yes
+            IdealStaticGameLOD = VeryLow
+            MovieVolume = 20.000000
+            MusicVolume = 20.000000
+            Resolution = $RESOLUTION_WIDTH $RESOLUTION_HEIGHT
+            SFXVolume = 20.000000
+            ScrollFactor = 100
+            SendDelay = no
+            StaticGameLOD = Very Low
+            SuppressCahPromo = true
+            TimesInGame = 520
+            UseEAX3 = no
+            VoiceVolume = 20.000000
+    wine:
+        dxvk: false
+        version: system
