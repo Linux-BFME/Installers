@@ -7,8 +7,7 @@ runner: wine
 script:
     files:
     - bfme2general: https://gitlab.com/dginovker/dump_bfme-ii/-/raw/master/generalfiles.7z
-    - bfme2bfme: https://gitlab.com/dginovker/dump_bfme-ii/-/raw/master/The%20Battle%20for%20Middle-earth%20(tm)%20II.7z
-    - bfme2bfmedata: https://gitlab.com/dginovker/dump_bfme-ii/-/raw/master/The%20Battle%20for%20Middle-earth%20(tm)%20II.data.7z
+    - bfme2bfme: https://gitlab.com/dginovker/dump_bfme-ii/-/raw/master/The%20Battle%20For%20Middle-earth%20(tm)%20II%20Folder.7z
     - installscript: https://raw.githubusercontent.com/Linux-BFME/Installers/master/Scripts/bfme2/bfme2.sh
     game:
         arch: win64
@@ -29,11 +28,6 @@ script:
     - extract:
         description: Extracting main game
         file: bfme2bfme
-        format: 7z
-        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Battle for Middle-earth (tm) II/
-    - extract:
-        description: Extracting data
-        file: bfme2bfmedata
         format: 7z
         dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Battle for Middle-earth (tm) II/
     - execute:

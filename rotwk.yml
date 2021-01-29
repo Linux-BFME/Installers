@@ -6,9 +6,11 @@ runner: wine
 
 script:
     files:
-    - bfme2106: https://github.com/Linux-BFME/Dump_BFME-II-1.06/archive/master.zip
-    - rotwk: https://github.com/Linux-BFME/Dump_RotWK-Latest/archive/master.zip
-    game:
+    - general: 
+    - bfme2106: 
+    - rotwk: 
+    - installscript: https://raw.githubusercontent.com/Linux-BFME/Installers/master/Scripts/rotwk/rotwk.sh
+   game:
         arch: win64
         exe: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Lord of the Rings, The Rise of the Witch-king
         working_dir: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Lord of the Rings, The Rise of the Witch-king
@@ -19,15 +21,23 @@ script:
         name: create_prefix
         prefix: $GAMEDIR
     - extract:
+        description: Extracting general files..
+        file: general
+        format: 7z
+        dst: $GAMEDIR/
+    - extract:
         description: Installing BFME II (Required for RotWK)
         file: bfme2106
-        format: zip
-        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Battle for Middle-earth (tm) II
+        format: 7z
+        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/
     - extract:
         description: Installing RotWK
         file: rotwk
-        format: zip
-        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Lord of the Rings, The Rise of the Witch-king
+        format: 7z
+        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/
+    - execute:
+        description: Patching multiplayer
+        file: installscript
     - write_file:
         file: $GAMEDIR/drive_c/users/$USER/Application Data/My The Lord of the Rings, The Rise of the Witch-king Files/Options.ini
         content: |
