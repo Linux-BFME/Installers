@@ -1,7 +1,7 @@
 name: Lord of the Rings - The Blue Wizard Mod
-game_slug: bwm
+game_slug: bwm333333
 version: Blue Wizard Mod 0.2.2
-slug: bwmslug
+slug: bwmslug331414
 runner: wine
 
 script:
@@ -21,7 +21,7 @@ script:
     - extract:
         description: Installing the game
         file: bwm
-        format: zip
+        format: 7z
         dst: $GAMEDIR/
     - execute:
         description: Patching multiplayer

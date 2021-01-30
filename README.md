@@ -24,7 +24,11 @@ Run the following command:
 
 ## Battle for Middle-Earth I - Blue Wizard Mod (Latest Update)
 ![](https://i.imgur.com/HJcPbfo.png)
-(Coming Soon)
+(In testing)
+Run the following command:
+
+`tmp=$(mktemp) && curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/bwm.yml -o $tmp && lutris -i $tmp`
+
 
 *****
 
@@ -51,4 +55,9 @@ Run the following command:
 ## Age of the Ring (Latest Update)
 ![](https://i.imgur.com/l7gnDJb.png)
 *Age of the Ring was voted the highest quality mod out of any game in 2020. It is effectively BFME III.*
-(Coming Soon)
+
+(In development - Do not use)
+Run the following command:
+
+`tmp=$(mktemp) && curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/aotr.yml -o $tmp && lutris -i $tmp`
+
