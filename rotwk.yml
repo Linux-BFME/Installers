@@ -29,7 +29,7 @@ script:
         description: Installing BFME II (Required for RotWK)
         file: bfme2106
         format: 7z
-        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/
+        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Battle for Middle-earth (tm) II
     - extract:
         description: Installing RotWK
         file: rotwk

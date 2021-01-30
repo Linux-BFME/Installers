@@ -1,19 +1,20 @@
 name: The Lord of the Rings - The Age of the Ring
 game_slug: AOTR
-version: 6.1
+version: Age of the Ring - Version 6.1
 slug: aotrslug
 runner: wine
 
 script:
     files:
-    - general: https://gitlab.com/dginovker/Dump_RotWK-Latest/-/raw/master/general.7z
+    - general: https://gitlab.com/dginovker/Dump_AOTR/-/raw/master/general.7z
     - bfme2106: https://gitlab.com/dginovker/Dump_RotWK-Latest/-/raw/master/The%20Battle%20For%20Middle-earth%20(tm)%20II%201.06%20Folder.7z
-    - aotr: 
+    - rotwk801: https://gitlab.com/dginovker/Dump_AOTR/-/raw/master/Rotwk801.7z
+    - aotr: https://gitlab.com/dginovker/Dump_AOTR/-/raw/master/Aotr61.7z
     - installscript: https://raw.githubusercontent.com/Linux-BFME/Installers/master/Scripts/rotwk/rotwk.sh
     game:
         arch: win64
-        exe: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Lord of the Rings, The Rise of the Witch-king/lotrbfme2ep1.exe
-        working_dir: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Lord of the Rings, The Rise of the Witch-king
+        exe: $GAMEDIR/drive_c/ProgramData/Microsoft/Windows/Start Menu/Programs/Age of the Ring/Age of the Ring 6.1.lnk
+        working_dir: $GAMEDIR/drive_c/ProgramData/Microsoft/Windows/Start Menu/Programs/Age of the Ring
         prefix: $GAMEDIR
     installer:
     - task:
@@ -29,12 +30,17 @@ script:
         description: Installing BFME II (Required for RotWK/AOTR)
         file: bfme2106
         format: 7z
-        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/
+        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Battle for Middle-earth (tm) II
+    - extract:
+        description: Installing RotWK
+        file: rotwk801
+        format: 7z
+        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Lord of the Rings, The Rise of the Witch-king/
     - extract:
         description: Installing AOTR
-        file: AOTR
+        file: aotr
         format: 7z
-        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/
+        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/AOTR6.1/
     - execute:
         description: Patching multiplayer
         file: installscript
