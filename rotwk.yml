@@ -34,7 +34,7 @@ script:
         description: Installing RotWK
         file: rotwk
         format: 7z
-        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/
+        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Lord of the Rings, The Rise of the Witch-king
     - execute:
         description: Patching multiplayer
         file: installscript
