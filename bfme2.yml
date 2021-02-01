@@ -1,5 +1,5 @@
 name: The Lord of the Rings - The Battle for Middle-Earth II
-game_slug: BFME2
+game_slug: lord-of-the-rings-battle-for-middle-earth-ii
 version: All patches
 slug: bfme2slug
 runner: wine

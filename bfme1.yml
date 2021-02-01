@@ -1,5 +1,5 @@
 name: Lord of the Rings - Battle for Middle Earth I
-game_slug: BFME1
+game_slug: the-lord-of-the-rings-the-battle-for-middle-earth
 version: Patch 1.06
 slug: bfme106slug
 runner: wine
