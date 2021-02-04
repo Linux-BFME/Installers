@@ -53,6 +53,8 @@ script:
             UnitDecals = yes
             UseEAX3 = no
             VoiceVolume = 80
+    system:
+        reset_desktop: true
     wine:
         dxvk: false
         version: system

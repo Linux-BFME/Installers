@@ -54,6 +54,8 @@ script:
             TimesInGame = 63
             UseEAX3 = no
             VoiceVolume = 48.000000
+    system:
+        reset_desktop: true
     wine:
         dxvk: false
         version: system
