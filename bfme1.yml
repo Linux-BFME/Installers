@@ -57,5 +57,3 @@ script:
         reset_desktop: true
     wine:
         dxvk: false
-        version: system
-
