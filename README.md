@@ -35,7 +35,6 @@ Run the following command:
 ## Battle for Middle-Earth II
 ![](https://i.imgur.com/G0NEN9r.jpg)
 
-(In testing)
 Run the following command:
 
 `tmp=$(mktemp) && curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/bfme2.yml -o $tmp && lutris -i $tmp`
@@ -45,7 +44,6 @@ Run the following command:
 ## Rise of the Witch King (Latest Update)
 ![](https://i.imgur.com/4xpC3mN.jpg)
 
-(In testing)
 Run the following command:
 
 `tmp=$(mktemp) && curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/rotwk.yml -o $tmp && lutris -i $tmp`
