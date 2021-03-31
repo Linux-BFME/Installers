@@ -18,6 +18,8 @@ Installation instructions:
 ![](https://i.imgur.com/ywMoJE2.jpg)
 Run the following command:
 
+(In development)
+
 `tmp=$(mktemp) && curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/bfme1.yml -o $tmp && lutris -i $tmp`
 
 *****
