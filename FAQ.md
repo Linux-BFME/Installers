@@ -28,5 +28,15 @@
 * Please create an issue reporting which game you're experiencing the issue on
 * Attach your `LOTRBFMe.dat` file for BFME1, or `game2.dat` file for BFME2
 * To learn more about why this happens, see [here](https://github.com/Linux-BFME/Installers/tree/master/Scripts)
+### BFME: I'm playing multiplayer and I'm getting "Game out of Synch" (Game out of Sync)
+* If you're playing LAN, make sure you're all connected to the same Network Switch/Router (not some people on Wifi, some wired into router, some wired into a network switch into a router)
+### BFME II: I'm playing multiplayer and I'm getting "Game out of Synch" (Game out of Sync)
+* Delete mapcache.ini
+* See LAN notes from BFME
+### BFME RotWK: I'm playing multiplayer and I'm getting "Game out of Synch" (Game out of Sync)
+* Make sure you're on the latest patch (Ring heros caused OOS in earlier patches)
+* Delete mapcache.ini
+* See LAN notes from BFME
+
 ### I have another question
 Ask me
