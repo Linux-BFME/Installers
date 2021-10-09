@@ -37,6 +37,8 @@
 * Make sure you're on the latest patch (Ring heros caused OOS in earlier patches)
 * Delete mapcache.ini
 * See LAN notes from BFME
+### Network play shows Alice can see Bob, but Bob can't see Alice
+* If you're using a Virtual Machine, make sure you're set to Bridged Ethernet instead of NAT
 
 ### I have another question
 Ask me
