@@ -18,13 +18,13 @@ Installation instructions:
 ![](https://i.imgur.com/ywMoJE2.jpg)
 Run the following command:
 
-(In development)
+(In testing)
 
 `tmp=$(mktemp) && curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/bfme1.yml -o $tmp && lutris -i $tmp`
 
 *****
 
-## Battle for Middle-Earth I - Blue Wizard Mod (Latest Update)
+## Battle for Middle-Earth I - Legends of the Third Age (0.2.2)
 ![](https://i.imgur.com/HJcPbfo.png)
 (In testing)
 Run the following command:
@@ -52,7 +52,7 @@ Run the following command:
 
 *****
 
-## Age of the Ring (Latest Update)
+## Age of the Ring (6.1)
 ![](https://i.imgur.com/l7gnDJb.png)
 *Age of the Ring was voted the highest quality mod out of any game in 2020. It is effectively BFME III.*
 
