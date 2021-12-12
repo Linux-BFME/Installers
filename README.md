@@ -24,12 +24,12 @@ Run the following command:
 
 *****
 
-## Battle for Middle-Earth I - Legends of the Third Age (0.2.2)
+## Battle for Middle-Earth I - Legends of the Third Age (0.4.0)
 ![](https://i.imgur.com/HJcPbfo.png)
 (In testing)
 Run the following command:
 
-`tmp=$(mktemp) && curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/bwm.yml -o $tmp && lutris -i $tmp`
+`tmp=$(mktemp) && curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/lot3a.yml -o $tmp && lutris -i $tmp`
 
 
 *****
