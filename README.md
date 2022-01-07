@@ -52,11 +52,11 @@ Run the following command:
 
 *****
 
-## Age of the Ring (7.2)
+## Age of the Ring (7.2.3)
 ![](https://i.imgur.com/l7gnDJb.png)
 *Age of the Ring was voted the highest quality mod out of any game in 2020. It is effectively BFME III.*
 
-(In development - Do not use)
+(In testing)
 Run the following command:
 
 `tmp=$(mktemp) && curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/aotr.yml -o $tmp && lutris -i $tmp`
