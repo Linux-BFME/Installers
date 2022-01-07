@@ -9,7 +9,7 @@ script:
     - general: https://gitlab.com/dginovker/dump_aotr_7.2.3/-/raw/master/general.7z
     - bfme2106: https://gitlab.com/dginovker/dump_aotr_7.2.3/-/raw/master/bfme2106.7z
     - rotwk801: https://gitlab.com/dginovker/dump_aotr_7.2.3/-/raw/master/Rotwk801.7z
-    - aotr: https://gitlab.com/dginovker/dump_aotr_7.2.3/-/raw/master/aotr72.7z
+    - aotr: https://gitlab.com/dginovker/dump_aotr_7.2.3-part2/-/raw/master/aotr72.7z
     - installscript: https://raw.githubusercontent.com/Linux-BFME/Installers/master/Scripts/rotwk/rotwk.sh
     game:
         arch: win64
