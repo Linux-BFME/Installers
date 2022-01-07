@@ -52,7 +52,7 @@ Run the following command:
 
 *****
 
-## Age of the Ring (6.1)
+## Age of the Ring (7.2)
 ![](https://i.imgur.com/l7gnDJb.png)
 *Age of the Ring was voted the highest quality mod out of any game in 2020. It is effectively BFME III.*
 

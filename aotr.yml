@@ -9,7 +9,7 @@ script:
     - general: https://gitlab.com/dginovker/Dump_AOTR/-/raw/master/general.7z
     - bfme2106: https://gitlab.com/dginovker/Dump_RotWK-Latest/-/raw/master/The%20Battle%20For%20Middle-earth%20(tm)%20II%201.06%20Folder.7z
     - rotwk801: https://gitlab.com/dginovker/Dump_AOTR/-/raw/master/Rotwk801.7z
-    - aotr: https://gitlab.com/dginovker/Dump_AOTR/-/raw/master/Aotr61.7z
+    - aotr: https://gitlab.com/dginovker/Dump_AOTR/-/raw/master/aotr72.7z
     - installscript: https://raw.githubusercontent.com/Linux-BFME/Installers/master/Scripts/rotwk/rotwk.sh
     game:
         arch: win64
@@ -40,7 +40,7 @@ script:
         description: Installing AOTR
         file: aotr
         format: 7z
-        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/AOTR6.1/
+        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/AOTR7.2/
     - execute:
         description: Patching multiplayer
         file: installscript
