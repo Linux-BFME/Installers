@@ -1,19 +1,19 @@
 name: The Lord of the Rings - The Age of the Ring
 game_slug: AOTR
-version: Age of the Ring - Version 7.2
+version: Age of the Ring - Version 7.2.3
 slug: aotrslug
 runner: wine
 
 script:
     files:
-    - general: https://gitlab.com/dginovker/Dump_AOTR/-/raw/master/general.7z
-    - bfme2106: https://gitlab.com/dginovker/Dump_RotWK-Latest/-/raw/master/The%20Battle%20For%20Middle-earth%20(tm)%20II%201.06%20Folder.7z
-    - rotwk801: https://gitlab.com/dginovker/Dump_AOTR/-/raw/master/Rotwk801.7z
-    - aotr: https://gitlab.com/dginovker/Dump_AOTR/-/raw/master/aotr72.7z
+    - general: https://gitlab.com/dginovker/dump_aotr_7.2.3/-/raw/master/general.7z
+    - bfme2106: https://gitlab.com/dginovker/dump_aotr_7.2.3/-/raw/master/bfme2106.7z
+    - rotwk801: https://gitlab.com/dginovker/dump_aotr_7.2.3/-/raw/master/Rotwk801.7z
+    - aotr: https://gitlab.com/dginovker/dump_aotr_7.2.3/-/raw/master/aotr72.7z
     - installscript: https://raw.githubusercontent.com/Linux-BFME/Installers/master/Scripts/rotwk/rotwk.sh
     game:
         arch: win64
-        exe: $GAMEDIR/drive_c/ProgramData/Microsoft/Windows/Start Menu/Programs/Age of the Ring/Age of the Ring 6.1.lnk
+        exe: $GAMEDIR/drive_c/ProgramData/Microsoft/Windows/Start Menu/Programs/Age of the Ring/Age of the Ring 7.2.lnk
         working_dir: $GAMEDIR/drive_c/ProgramData/Microsoft/Windows/Start Menu/Programs/Age of the Ring
         prefix: $GAMEDIR
     installer:
@@ -40,7 +40,7 @@ script:
         description: Installing AOTR
         file: aotr
         format: 7z
-        dst: $GAMEDIR/drive_c/Program Files (x86)/AOTR6.1/
+        dst: $GAMEDIR/drive_c/Program Files (x86)/AOTR7.2/
     - execute:
         description: Patching multiplayer
         file: installscript
