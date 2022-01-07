@@ -40,7 +40,7 @@ script:
         description: Installing AOTR
         file: aotr
         format: 7z
-        dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/AOTR7.2/
+        dst: $GAMEDIR/drive_c/Program Files (x86)/AOTR6.1/
     - execute:
         description: Patching multiplayer
         file: installscript
