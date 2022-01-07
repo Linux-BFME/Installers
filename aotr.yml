@@ -9,7 +9,8 @@ script:
     - general: https://gitlab.com/dginovker/dump_aotr_7.2.3/-/raw/master/general.7z
     - bfme2106: https://gitlab.com/dginovker/dump_aotr_7.2.3/-/raw/master/bfme2106.7z
     - rotwk801: https://gitlab.com/dginovker/dump_aotr_7.2.3/-/raw/master/Rotwk801.7z
-    - aotr: https://gitlab.com/dginovker/dump_aotr_7.2.3-part2/-/raw/master/aotr72.7z
+    - aotrPart1: https://gitlab.com/dginovker/dump_aotr_7.2.3-part2/-/raw/master/aotr7.2.3.part1.7z
+    - aotrPart2: https://gitlab.com/dginovker/dump_aotr_7.2.3-part2/-/raw/master/aotr7.2.3.part2.7z
     - installscript: https://raw.githubusercontent.com/Linux-BFME/Installers/master/Scripts/rotwk/rotwk.sh
     game:
         arch: win64
@@ -37,8 +38,13 @@ script:
         format: 7z
         dst: $GAMEDIR/drive_c/Program Files (x86)/Electronic Arts/The Lord of the Rings, The Rise of the Witch-king/
     - extract:
-        description: Installing AOTR
-        file: aotr
+        description: Installing AOTR (Part 1/2)
+        file: aotrPart1
+        format: 7z
+        dst: $GAMEDIR/drive_c/Program Files (x86)/AOTR7.2/
+    - extract:
+        description: Installing AOTR (Part 2/2)
+        file: aotrPart2
         format: 7z
         dst: $GAMEDIR/drive_c/Program Files (x86)/AOTR7.2/
     - execute:
