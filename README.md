@@ -26,7 +26,7 @@ Run the following command:
 
 ## Battle for Middle-Earth I - Legends of the Third Age (0.4.0)
 ![](https://i.imgur.com/HJcPbfo.png)
-(In testing)
+(In Development - Has 3 minute auto defeat)
 Run the following command:
 
 `tmp=$(mktemp) && curl https://raw.githubusercontent.com/Linux-BFME/Installers/master/lot3a.yml -o $tmp && lutris -i $tmp`
