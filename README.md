@@ -44,7 +44,7 @@ Run the following command:
 
 *****
 
-## Rise of the Witch King (Latest Update)
+## Rise of the Witch King (2.02 v8.4)
 ![](https://i.imgur.com/4xpC3mN.jpg)
 
 Run the following command:
