@@ -30,6 +30,7 @@
 * To learn more about why this happens, see [here](https://github.com/Linux-BFME/Installers/tree/master/Scripts)
 ### BFME: I'm playing multiplayer and I'm getting "Game out of Synch" (Game out of Sync)
 * If you're playing LAN, make sure you're all connected to the same Network Switch/Router (not some people on Wifi, some wired into router, some wired into a network switch into a router)
+* If you are in the above situation, apparently there is a "NAT" setting (in BFME) you can enable to fix this. Haven't checked if this is actually true
 ### BFME II: I'm playing multiplayer and I'm getting "Game out of Synch" (Game out of Sync)
 * Delete mapcache.ini
 * See LAN notes from BFME
