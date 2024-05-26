@@ -1,3 +1,9 @@
+## DEPRECATION NOTICE
+
+Use the legendary 2.22 launcher via Wine instead: https://github.com/Ravo92/Patch-2.22-Launcher/
+
+---
+
 # Lutris Install Scripts
 
 Note: These installers are in development. Feel free to report bugs but don't attempt to use for actual playing.
